@@ -13,6 +13,8 @@
     --border: rgb(255, 0, 0);
     --white: rgb(227, 227, 227);
     --footer: #433f3fad;
+
+    --opac: #221e1ead;
 }
 
 body{
@@ -45,7 +47,7 @@ body{
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    background-color: var(--opacity-background);
+    background-color: var(--opac);
     border-radius: 20px;
     padding: 15px;
     border: 2px solid var(--border);
