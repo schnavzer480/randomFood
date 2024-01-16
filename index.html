@@ -10,6 +10,26 @@
     <title>Vad fan ska vi äta?</title>
 </head>
 <body>
-    
+    <h1>Random Food Selector</h1>
+
+<button
+onclick="selectRandomFood()">Select
+Random Food</button>
+
+<p id="selectedFood"></p>
+
+<script>
+function randomFood(array) {
+const randomIndex = Math.floor(Math.random() * array.length);
+return array[randomIndex];
+}
+
+const foodArray = ["Hamburgare", "Pizza", "KFC", "ChopChop"];
+
+function selectRandomFood() {
+const decideFood = randomFood(foodArray);
+document.getElementById("selectedFood").textContent = decideFood;
+}
+</script>
 </body>
 </html>
