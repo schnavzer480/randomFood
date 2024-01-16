@@ -1,2 +1,2 @@
 # randomFood
-A small project I use to learn js. The goal is to build an easy webpage where the user can click a button that gives him a name of a local fast food restaurant.
+A simple web page that uses html, css and js to make the user able to click a button and be presented with the name of a fast food restaurant.
