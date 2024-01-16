@@ -9,27 +9,36 @@
     <!--FAVICON GOES HERE-->
     <title>Vad fan ska vi äta?</title>
 </head>
-<body>
-    <h1>Random Food Selector</h1>
+<body class="background-image">
+    <header>
+        <div class="header">
+            <h1>Vad fan ska vi äta?</h1>
+        </div>
+    </header>
+    <main>
+        <!--<div class="image">
+            <img src="food.webp" alt="An AI generated image displaying fast food on a table">
+        </div>-->
+        <div class="btn">
+            <button onclick="selectRandomFood()" >Klicka här tjockis!</button>
 
-<button
-onclick="selectRandomFood()">Select
-Random Food</button>
+            <p id="selectedFood"></p>
 
-<p id="selectedFood"></p>
+            <script>
+            function randomFood(array) {
+            const randomIndex = Math.floor(Math.random() * array.length);
+            return array[randomIndex];
+            }
 
-<script>
-function randomFood(array) {
-const randomIndex = Math.floor(Math.random() * array.length);
-return array[randomIndex];
-}
+            const foodArray = ["McDonalds", "Pizza", "KFC", "ChopChop", "Burger King", "Max"];
 
-const foodArray = ["Hamburgare", "Pizza", "KFC", "ChopChop"];
-
-function selectRandomFood() {
-const decideFood = randomFood(foodArray);
-document.getElementById("selectedFood").textContent = decideFood;
-}
-</script>
+            function selectRandomFood() {
+            const decideFood = randomFood(foodArray);
+            document.getElementById("selectedFood").textContent = decideFood;
+            }
+            </script>
+        </div>    
+    </main>
+    <footer></footer>
 </body>
 </html>
