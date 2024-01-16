@@ -16,13 +16,10 @@
         </div>
     </header>
     <main>
-        <!--<div class="image">
-            <img src="food.webp" alt="An AI generated image displaying fast food on a table">
-        </div>-->
         <div class="btn">
             <button onclick="selectRandomFood()" >Klicka här, tjockis!</button>
 
-            <p id="selectedFood"></p>
+            <p id="selectedFood" class="hidden"></p>
 
             <script>
             function randomFood(array) {
@@ -34,7 +31,9 @@
 
             function selectRandomFood() {
             const decideFood = randomFood(foodArray);
-            document.getElementById("selectedFood").textContent = decideFood;
+            const selectedFoodElement = document.getElementById("selectedFood");
+            selectedFoodElement.textContent = decideFood;
+            selectedFoodElement.classList.remove("hidden");
             }
             </script>
         </div>    
