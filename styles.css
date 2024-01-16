@@ -8,6 +8,10 @@
 
 :root{
     font-size: 62.5%;
+    --full-background: #d40e0e;
+    --opacity-background: #d40e0ead;
+    --border: rgb(255, 0, 0);
+    --white: rgb(227, 227, 227);
 }
 
 body{
@@ -34,7 +38,10 @@ body{
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    border: 2px solid red;
+    background-color: var(--opacity-background);
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid var(--border);
 }
 
 .btn{
@@ -49,19 +56,23 @@ body{
 p{
     text-align: center;
     font-size: 3rem;
-    border: 2px solid red;
+    background-color: var(--opacity-background);
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid var(--border);
 }
 
 button{
-    background-color: #04AA6D; /* Green */
+    background-color: var(--full-background); 
     border: none;
-    color: white;
+    color: var(--white);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: "Bungee Spice", sans-serif;
     font-size: 3rem;
-    max-width: 40rem;
+    line-height: 1.5;
+    max-width: 30rem;
     margin-bottom: 100px;
 }
-
