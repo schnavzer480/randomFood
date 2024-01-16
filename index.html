@@ -10,34 +10,38 @@
     <title>Vad fan ska vi äta?</title>
 </head>
 <body class="background-image">
-    <header>
-        <div class="header">
-            <h1>Vad fan ska vi äta?</h1>
-        </div>
-    </header>
-    <main>
-        <div class="btn">
-            <button onclick="selectRandomFood()" >Klicka här, tjockis!</button>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <h1>Vad fan ska vi äta?</h1>
+            </div>
+        </header>
+        <main>
+            <div class="btn">
+                <button onclick="selectRandomFood()" >Klicka här, tjockis!</button>
 
-            <p id="selectedFood" class="hidden"></p>
+                <p id="selectedFood" class="hidden"></p>
 
-            <script>
-            function randomFood(array) {
-            const randomIndex = Math.floor(Math.random() * array.length);
-            return array[randomIndex];
-            }
+                <script>
+                function randomFood(array) {
+                const randomIndex = Math.floor(Math.random() * array.length);
+                return array[randomIndex];
+                }
 
-            const foodArray = ["McDonald's", "Pizza", "KFC", "ChopChop", "Burger King", "Max"];
+                const foodArray = ["McDonald's", "Pizza", "KFC", "ChopChop", "Burger King", "Max"];
 
-            function selectRandomFood() {
-            const decideFood = randomFood(foodArray);
-            const selectedFoodElement = document.getElementById("selectedFood");
-            selectedFoodElement.textContent = decideFood;
-            selectedFoodElement.classList.remove("hidden");
-            }
-            </script>
-        </div>    
-    </main>
-    <footer></footer>
+                function selectRandomFood() {
+                const decideFood = randomFood(foodArray);
+                const selectedFoodElement = document.getElementById("selectedFood");
+                selectedFoodElement.textContent = decideFood;
+                selectedFoodElement.classList.remove("hidden");
+                }
+                </script>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p class="footer-text">© 2023 SchnavzerSvpremacy</p>
+    </footer>
 </body>
 </html>

@@ -12,6 +12,7 @@
     --opacity-background: #d40e0ead;
     --border: rgb(255, 0, 0);
     --white: rgb(227, 227, 227);
+    --footer: #433f3fad;
 }
 
 body{
@@ -21,6 +22,12 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: "Bungee Spice", sans-serif;
+}
+
+.wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .background-image{
@@ -42,6 +49,7 @@ body{
     border-radius: 20px;
     padding: 15px;
     border: 2px solid var(--border);
+    margin-top: 50px;
 }
 
 .btn{
@@ -68,16 +76,41 @@ p{
 }
 
 button{
-    background-color: var(--full-background); 
-    border: none;
-    color: var(--white);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-family: "Bungee Spice", sans-serif;
-    font-size: 3rem;
     line-height: 1.5;
     max-width: 30rem;
     margin-bottom: 100px;
+    
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--full-background);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 9px var(--opacity-background);
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+    padding: 15px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.footer-text{
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    color: var(--full-background);
+    background-color: transparent;
+    padding: 15px;
+    border: none;
 }
