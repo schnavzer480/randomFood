@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Bungee Spice", sans-serif;
+}
+
+.background-image{
+    height: 100%;
+    width: 100%;
+    background-image: url("food.webp");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    border: 2px solid red;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 2px solid blue;
+}
+
+p{
+    text-align: center;
+    font-size: 3rem;
+    border: 2px solid red;
+}
+
+button{
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    max-width: 40rem;
+    margin-bottom: 100px;
+}
+
