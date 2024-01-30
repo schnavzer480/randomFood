@@ -107,7 +107,7 @@ input{
 }
 
 input::placeholder{
-    color: var(--white);
+    color: var(--footer);
     font-size: 2rem;
 }
 
