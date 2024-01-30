@@ -29,6 +29,8 @@
     background-size: cover;
 }
 
+
+/*HEADER*/
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -47,6 +49,8 @@
     width: 80%;
 }
 
+
+/*MAIN*/
 main{
     display: flex;
     flex-direction: column;
@@ -120,24 +124,19 @@ input::placeholder{
 
 
 button{
-    font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
-    letter-spacing: 0.7px;
     max-width: 30rem;
-    margin-bottom: 100px;
-    
-    display: inline-block;
+    margin-bottom: 20px;
     padding: 15px 25px;
     font-size: 3rem;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    outline: none;
     color: var(--white);
     background-color: var(--button);
     border: 2px solid var(--button);
     border-radius: 20px;
-    box-shadow: 5px 5px 5px var(--btn-back);
+    box-shadow: 5px 5px 5px var(--button);
 }
 
 p{
@@ -167,7 +166,6 @@ footer{
 
 .footer-text{
     font-size: 1.5rem;
-    font-family: 'Ubuntu', sans-serif;
     color: var(--full-background);
     background-color: transparent;
     padding: 15px;
