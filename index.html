@@ -17,20 +17,22 @@
     <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
     <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#d40e0ecf">
     <title>Vad fan ska vi äta?</title>
 </head>
 <body class="background-image">
-    <div class="wrapper">
-        <header>
+    <header>
+        <div class="wrapper">
             <div class="header">
-                <h1>Vad fan ska vi äta?</h1>
+                <h1>The fuck are we supposed to eat?</h1>
             </div>
-        </header>
+        </div>
         <main>
-            <input type="text" id="newFoodInput" placeholder="Enter new food...">
+            <div class="input-container">
+                <input type="text" id="newFoodInput" placeholder="Enter new food...">
                 <button onclick="addFood()">Add Food</button>
-                <button onclick="selectRandomFood()">Klicka här, tjockis!</button>
+            </div>
+                <button onclick="selectRandomFood()">Click here to get a random restaurant, Fatty McFatFace!</button>
 
                 <p id="selectedFood" class="hidden"></p>
 
@@ -48,7 +50,7 @@
 
                     if (newFood !== "") {
                         foodArray.push(newFood);
-                        newFoodInput.value = ""; // Clear the input field
+                        newFoodInput.value = "";
                     }
                 }
 
@@ -61,7 +63,7 @@
                 </script>
             </div>
         </main>
-    </div>
+    </header>
     <footer>
         <p class="footer-text">© 2024 SchnavzerSvpremacy</p>
     </footer>
