@@ -28,24 +28,35 @@
             </div>
         </header>
         <main>
-            <div class="btn">
-                <button onclick="selectRandomFood()" >Klicka här, tjockis!</button>
+            <input type="text" id="newFoodInput" placeholder="Enter new food...">
+                <button onclick="addFood()">Add Food</button>
+                <button onclick="selectRandomFood()">Klicka här, tjockis!</button>
 
                 <p id="selectedFood" class="hidden"></p>
 
                 <script>
                 function randomFood(array) {
-                const randomIndex = Math.floor(Math.random() * array.length);
-                return array[randomIndex];
+                    const randomIndex = Math.floor(Math.random() * array.length);
+                    return array[randomIndex];
                 }
 
                 const foodArray = ["McDonald's", "Pizza", "KFC", "ChopChop", "Burger King", "Max"];
 
+                function addFood() {
+                    const newFoodInput = document.getElementById("newFoodInput");
+                    const newFood = newFoodInput.value.trim();
+
+                    if (newFood !== "") {
+                        foodArray.push(newFood);
+                        newFoodInput.value = ""; // Clear the input field
+                    }
+                }
+
                 function selectRandomFood() {
-                const decideFood = randomFood(foodArray);
-                const selectedFoodElement = document.getElementById("selectedFood");
-                selectedFoodElement.textContent = decideFood;
-                selectedFoodElement.classList.remove("hidden");
+                    const decideFood = randomFood(foodArray);
+                    const selectedFoodElement = document.getElementById("selectedFood");
+                    selectedFoodElement.textContent = decideFood;
+                    selectedFoodElement.classList.remove("hidden");
                 }
                 </script>
             </div>
