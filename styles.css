@@ -60,7 +60,6 @@ main{
 h2{
     text-align: center;
     font-size: 3rem;
-    background-color: var(--opacity-background);
     color: var(--white);
     border-radius: 20px;
     padding: 5px;
@@ -82,7 +81,7 @@ h2{
 .instructions p{
     text-align: center;
     font-size: 1.8rem;
-    background-color: var(--opacity-background);
+    background-color: transparent !important;
     color: var(--white);
     border-radius: 20px;
     padding: 10px;
