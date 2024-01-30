@@ -95,9 +95,9 @@ button{
     outline: none;
     color: var(--white);
     background-color: var(--button);
-    border: none;
+    border: 2px solid var(--button);
     border-radius: 20px;
-    box-shadow: 5px 9px var(--btn-back);
+    box-shadow: 5px 5px 5px var(--btn-back);
 }
 
 
