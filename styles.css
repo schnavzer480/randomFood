@@ -19,6 +19,10 @@
     --btn-back: #024b23b5;
 }
 
+nav, main, header, footer, section, figure {
+    display: block;
+}
+
 .background-image{
     height: 100%;
     width: 100%;
@@ -51,7 +55,7 @@
 
 
 /*MAIN*/
-main{
+main, section{
     display: flex;
     flex-direction: column;
     align-items: center;
