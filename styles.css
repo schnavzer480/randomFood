@@ -85,6 +85,7 @@ h2{
 .instructions p{
     text-align: center;
     font-size: 1.8rem;
+    font-weight: lighter;
     background-color: transparent !important;
     color: var(--white);
     border-radius: 20px;
