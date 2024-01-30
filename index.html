@@ -18,7 +18,7 @@
     <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#d40e0ecf">
-    <title>Vad fan ska vi äta?</title>
+    <title>The fuck are we supposed to eat?</title>
 </head>
 <body class="background-image">
     <header>
@@ -33,13 +33,6 @@
                 <p>The Restaurant Generator is the tool you need when you and your SO can't decide what to eat. Just click the button and it will randomly choose a restaurant for you.</p>
                 <p>McDonald's, KFC, Burger King, Max Hamburgare, ChopChop and "pizza" are already preset in the application. If you want to add a restaurant of your own to the pool, just enter its name in the field above the "Add Food" button</p>
                 <p>This site is optimized for smartphones. It works on both tablets and larger monitors as well but I would rather be force fed paprika than writing media queries for laptops.</p>
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
             </div>
             <div class="input-container">
                 <input type="text" id="newFoodInput" placeholder="Enter new restaurant...">
@@ -50,6 +43,7 @@
 
                 <p id="selectedFood" class="hidden"></p>
             </div>
+            <div class="script-container">
                 <script>
                 function randomFood(array) {
                     const randomIndex = Math.floor(Math.random() * array.length);
