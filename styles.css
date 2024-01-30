@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
 *{
     padding: 0;
@@ -8,7 +8,7 @@
 
 :root{
     font-size: 62.5%;
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 2px;
     --full-background: #d40e0e;
     --opacity-background: #d40e0ecf;
@@ -46,6 +46,40 @@
     width: 80%;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructions{
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--opacity-background);
+    border: 2px solid var(--border);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.instructions p{
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--opacity-background);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+ol{
+    padding-left: 30px;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+
 .input-container{
     display: flex;
     flex-direction: column;
@@ -54,14 +88,17 @@
 }
 
 input{
-    width: 50%;
     border-radius: 20px;
     padding: 10px;
     text-align: center;
     background-color: var(--full-background);
     border: 2px solid var(--full-background);
     color: var(--white);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    color: var(--white);
 }
 
 .output-container{
@@ -76,7 +113,7 @@ input{
 
 
 button{
-    font-family: 'Lilita One', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
     letter-spacing: 0.7px;
     max-width: 30rem;
@@ -123,7 +160,7 @@ footer{
 
 .footer-text{
     font-size: 1.5rem;
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     color: var(--full-background);
     background-color: transparent;
     padding: 15px;
