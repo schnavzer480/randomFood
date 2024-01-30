@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Food decission application">
+    <meta name="description" content="Restaurant picker application">
     <meta name="author" content="Christoffer Jonsson">
-    <meta property="og:title" content="Tangmo's BBQ">
-    <meta property="og:description" content="Food decission application">
+    <meta property="og:title" content="The fuck are we eating?">
+    <meta property="og:description" content="Restaurant picker application">
     <meta property="og:image" content="favicon-32x32.webp">
-    <meta property="og:url" content="https://paddismat.netlify.app">
+    <meta property="og:url" content="https://thefuckareweeating.netlify.app">
     <meta property="og:type" content="website">
     <link href="styles.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
@@ -18,22 +18,24 @@
     <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#d40e0ecf">
-    <title>The fuck are we supposed to eat?</title>
+    <title>The fuck are we eating?</title>
 </head>
 <body class="background-image">
     <header>
         <div class="wrapper">
             <div class="header">
-                <h1>The fuck are we supposed to eat?</h1>
+                <h1>The fuck are we eating?</h1>
             </div>
         </div>
         <main>
-            <div class="instructions">
-                <h2>How to use the Restraurant Generator</h2>
-                <p>The Restaurant Generator is the tool you need when you and your SO can't decide what to eat. Just click the button and it will randomly pick a restaurant for you.</p>
-                <p>McDonald's, KFC, Burger King, Max Hamburgare, ChopChop and "pizza" are already preset in the application. If you want to add a restaurant of your own to the pool, just enter its name in the field above the "Add Food" button.</p>
-                <p>This site is optimized for smartphones. It works on both tablets and larger monitors as well but I would rather be force fed paprika than writing media queries for laptops.</p>
-            </div>
+            <section>
+                <div class="instructions">
+                    <h2>How to use the Restraurant Generator</h2>
+                    <p>The Restaurant Generator is the tool you need when you and your SO can't decide what to eat. Just click the button and it will randomly pick a restaurant for you.</p>
+                    <p>McDonald's, KFC, Burger King, Max Hamburgare, ChopChop and "pizza" are already preset in the application. If you want to add a restaurant of your own to the pool, just enter its name in the field above the "Add Food" button.</p>
+                    <p>This site is optimized for smartphones. It works on both tablets and larger monitors as well but I would rather be force fed paprika than writing media queries for laptops.</p>
+                </div>
+            </section>  
             <div class="input-container">
                 <input type="text" id="newFoodInput" placeholder="Enter new restaurant...">
                 <button onclick="addFood()">Add Food</button>
