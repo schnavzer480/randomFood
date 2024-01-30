@@ -14,7 +14,7 @@
     --opacity-background: #d40e0ecf;
     --border: rgb(255, 0, 0);
     --white: rgb(227, 227, 227);
-    --footer: #1d1b1bad;
+    --footer: #1d1b1bcc;
     --button: #024b23;
     --btn-back: #024b23b5;
 }
@@ -32,7 +32,6 @@
 .wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -45,52 +44,36 @@
     border-radius: 20px;
     padding: 15px;
     width: 80%;
-    
-    
-    margin-top: 20px;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid red;
 }
 
 .input-container{
     display: flex;
     flex-direction: column;
-
-    border: 2px solid blue;
+    align-items: center;
+    margin-top: 50px;
 }
 
+input{
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--full-background);
+    border: 2px solid var(--full-background);
+    color: var(--white);
+    margin-bottom: 50px;
+}
 
-
-
-
-
-.btn{
+.output-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 100px;
 }
 
-p{
-    text-align: center;
-    font-size: 3rem;
-    background-color: var(--opacity-background);
-    color: var(--white);
-    border-radius: 20px;
-    padding: 15px;
-    border: 2px solid var(--border);
-}
 
-.hidden{
-    background-color: transparent;
-    border: 2px solid transparent;
-}
+
+
+
 
 button{
     font-family: 'Lilita One', sans-serif;
@@ -113,6 +96,20 @@ button{
     box-shadow: 5px 5px 5px var(--btn-back);
 }
 
+p{
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--opacity-background);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    border: 2px solid var(--border);
+}
+
+.hidden{
+    background-color: transparent;
+    border: 2px solid transparent;
+}
 
 footer{
     display: flex;

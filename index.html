@@ -29,13 +29,14 @@
         </div>
         <main>
             <div class="input-container">
-                <input type="text" id="newFoodInput" placeholder="Enter new food...">
+                <input type="text" id="newFoodInput" placeholder="Enter new restaurant...">
                 <button onclick="addFood()">Add Food</button>
             </div>
+            <div class="output-container">
                 <button onclick="selectRandomFood()">Click here to get a random restaurant, Fatty McFatFace!</button>
 
                 <p id="selectedFood" class="hidden"></p>
-
+            </div>
                 <script>
                 function randomFood(array) {
                     const randomIndex = Math.floor(Math.random() * array.length);
